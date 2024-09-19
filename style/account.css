@@ -1,0 +1,150 @@
+body {
+  background-color: white;
+}
+
+/*LOGIN*/
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  background-color: transparent;
+}
+
+
+img {
+  pointer-events: none;
+}
+
+.login-page-format {
+  width: 100%;
+  display: grid;
+  
+  row-gap: 15px;
+  position: absolute;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 250px;
+}
+.register-an-account-format {
+  width: 100%;
+  display: grid;
+  
+  row-gap: 15px;
+  position: absolute;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 550px;
+}
+
+
+
+.login {
+  width: 600px;
+  font-size: 25px;
+  margin: auto;
+}
+
+
+.input-email,
+.input-password {
+  width: 600px;
+  height: 45px;
+
+  border-style: solid;
+  border-color: black;
+  border-radius: 1px;
+  border-width: 1px;
+  padding-left: 10px;
+  margin: auto;
+  outline: none;
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+input[type=email]:focus,
+input[type=password]:focus {
+  border: 1px solid black;
+  opacity: 1;
+}
+
+
+.email-me-checkbox {
+  width: 600px;
+  height: 10px;
+  display: flex;
+  justify-content:flex-start;
+  vertical-align: center;
+  align-items: center;
+  margin-top: 0px;
+  gap: 3px;
+  margin:auto;
+  
+}
+
+
+.check {
+  font-size: 15px;
+  display:inline-block;
+}
+.regester-an-account-button {
+  width: 614px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left:auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 0;
+  border-width: 1px;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+.sign-in-button {
+  width: 614px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left:auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 0;
+  border-width: 1px;
+  background-color: transparent;
+  font-weight: bold;
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+.regester-an-account-button:hover,
+.sign-in-button:hover {
+  background-color: #040F16;
+  color: white;
+  border-color: #040F16;
+}
+
+
+
+.fg {
+  margin-top: 0px;
+  font-size: 17px;
+  height: 10px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.fg:hover {
+  cursor: pointer;
+}
+
+

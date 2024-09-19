@@ -1,0 +1,323 @@
+body {
+  background-color: white;
+}
+
+img {
+  pointer-events: none;
+}
+
+.products {
+  
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  opacity: 1;
+}
+.cloth {
+  height: auto;
+}
+
+
+p {
+  margin:0;
+}
+
+.product-1,
+.product-2,
+.product-3 {
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .products {
+    grid-template-columns: 1fr 1fr;
+    
+    row-gap: 30px;
+    left: 20px;
+    right: 20px;
+    column-gap: 30px;
+  }
+  .cloth {
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+.click-to-blur-product > :not(.header):not(.product-1-info) {
+  filter: blur(0.2rem);
+  transition: 0.3s;
+}
+
+.no-click-to-blur-product {
+  filter: blur(0);
+  transition: all 0.3s;
+}
+
+.border-add {
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(165, 165, 165);
+  border-radius: 5px;
+}
+.cloth:hover {
+  cursor: pointer;
+}
+
+.prod-button {
+  /* Remove all default styling */
+  all: unset;
+  
+  /* Optional: Ensure the cursor changes to a pointer on hover */
+  cursor: pointer;
+  
+  /* Optional: Ensure the button behaves like an inline-block element */
+  display: inline-block;
+  
+  /* Optional: Ensure text is selectable */
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* Ensure the button looks clickable on hover in all browsers */
+.prod-button:hover {
+  cursor: pointer;
+}
+
+/* Remove the dotted outline in Firefox */
+.prod-button::-moz-focus-inner {
+  border: 0;
+}
+
+/* Remove the outline when the button is focused */
+.prod-button:focus {
+  outline: none;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+.product-1-info {
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  height: 599px;
+  display: none;
+  
+  border-style: none;
+  border-width: 1px;
+  box-shadow: 7px 7px 40px rgba(0, 0, 0, 0.6);
+}
+
+.product-img-after-click {
+  height: auto;
+  width: 51.2%;
+  
+  display: inline-block;
+}
+.product-desc {
+  height: 100%;
+  width: 48.8%;
+  background-color: white;
+  text-wrap: wrap;
+  
+  
+}
+
+.product-1-inspect-img {
+  width:100%;
+}
+
+.product-customize {
+
+  width: 100%;
+
+  margin-top: 20px;
+}
+
+
+
+
+
+.size-container {
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 200px;
+  height: 35px;
+  display: flex;
+  justify-content:space-evenly;
+  border-style: none;
+  font-size: large;
+  align-items: center;
+  border-radius: 2px;
+  border-color: black;
+}
+.color-container {
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 200px;
+  height: 35px;
+  display: flex;
+  border-style: none;
+  font-size: large;
+  align-items: center;
+  border-radius: 2px;
+  border-color: black;
+}
+
+
+.size-text,
+.color-text {
+  
+  padding-right: 30px;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", serif;
+  opacity: 0.8;
+
+  
+}
+.size-value-s,
+.size-value-m,
+.size-value-l {
+  border-style: solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+  border-color: black;
+  opacity: 0.4;
+  background-color: transparent;
+}
+
+
+
+.size-value:hover {
+  cursor: pointer;
+}
+
+
+  
+
+
+
+
+
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  
+    margin-left: 45px;
+    border-style: none;
+    border-color: #000000;
+}
+.quantity-label {
+    background-color: #000000;
+    padding: 10px 20px;
+    
+    
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+.quantity-btn-pos,
+.quantity-btn-neg {
+    background-color: rgb(244, 244, 244);
+    padding: 15px 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.quantity-btn-pos {
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.quantity-btn-neg {
+  border-style: solid;
+  border-width: 1px 0 1px 1px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.quantity-btn:hover {
+    background-color: #d0d0d0;
+}
+.quantity-value {
+    padding: 15px 2px;
+    min-width: 15px;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    
+}
+.adding {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  margin-right: 140px;
+  margin-top: 70px;
+}
+
+.add-to-bag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+  
+}
+
+.add-to-bag-button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  height: 51px;
+  width: 150px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: "Arial", serif;
+  font-size: medium;
+  transition: all 0.3s;
+  
+}
+
+.add-to-bag-button:hover {
+  background-color: rgba(0, 0, 0, 0.729);
+}
+
+.color-value {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border-style: none;
+  
+}
+.button-is-clicked-size {
+  opacity: 1;
+}
+
+
